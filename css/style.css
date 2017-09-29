@@ -5,6 +5,7 @@ body {
 	font-family: 'Baloo Bhaijaan', cursive;
 	font-size:16px;
 	padding-top: 70px; 
+	min-width: 768px
 }
 body a {
 	transition: 0.5s all;
@@ -25,6 +26,7 @@ body a:focus, a:hover {
 
 body::-webkit-scrollbar {
     width: 0.5em;
+
 }
  
 body::-webkit-scrollbar-track {
@@ -190,7 +192,13 @@ label {
 }
 
 
-
+/*logo image*/
+.image-head img{
+	position: absolute; top: -75px;
+	left: -10px;
+	height: 260px;
+	width: 260px
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -223,21 +231,75 @@ label {
 	overflow:hidden;
 	width:100%
 }
-#slider{
-	position:relative;
-	 -webkit-animation: mymove 50s 5 ;                   
-    animation: mymove 200s infinite;
-}
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
     from {left: 0px;}
-    to {left: -1000px}
+    to {left: -500px}
 }
 
 @keyframes mymove {
     from {left: 0px;}
-    to {left: -1000px;}
+    to {left: -500px;}
 }
+
+#slider-wrapper{
+	position:relative;
+	 -webkit-animation: mymove 100s infinite ;                   
+    animation: mymove 100s infinite;
+}
+#slider-wrapper:hover {
+    -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    animation-play-state: paused;
+}
+.arrows{
+	position:absolute;
+	margin-left:55%;
+	padding-left:20px;
+	visibility:hidden
+}
+@media (max-width: 784px){
+	.item-slider{
+		width: 170px;
+		margin-left: -5px;
+	}
+	.banner{
+		width:10px;
+		background:black;
+		margin-left:-250px
+	}
+	.side-banner img{
+		visibility:hidden
+	}
+	#slider-wrapper{
+	 -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    animation-play-state: paused;
+	}
+	/*logo image*/
+.image-head img{
+	position: absolute; 
+	top: -75px;
+	left: 30%;
+	height: 260px;
+	z-index: 998;
+	width: 260px
+	}
+.cart-btn{
+	position: absolute;
+	top: 10px;
+	left:10px;
+	width: 80px;
+	}
+	
+}
+@media(max-width:1000px){
+	.arrows{
+	position:absolute;
+	margin-left:55%;
+	padding-left:40px;
+	visibility:visible
+	}
+}
+
 
 
 /* Outer */
@@ -777,6 +839,37 @@ ul.socials li {
 .btn-danger.my-cart-btn:focus {
     outline: none;
 }
+.cart-btn{
+	position:absolute;
+	top:10px;
+	right:10px;
+	width: 80px;
+	transition: 0.5s;
+	background: #12805D;
+	margin-top: -5px;
+	color: #fff;
+	font-size: 14px;
+	border:1px solid #fff;
+	border-radius: 5px
+}
+.cart-btn:hover{
+	color: #12805D;
+	background:  #fff;
+	font-size: 16px;
+	border:1px solid #fff;
+	border-radius: 5px;
+	animation:grow;
+	animation-duration: 1s
+}
+@keyframes grow{
+	from{font-size: 14px}
+	to{font-size: 16px}
+}
+@-webkit-keyframes grow{
+	from{font-size: 14px}
+	to{font-size: 16px}
+}
+
 .snipcart-details input.button {
     font-size: 14px;
     color: #fff;
@@ -985,19 +1078,15 @@ a.collection i {
     padding: 4em 0;
 }
 /*cart toggle menu css*/
-.cart-btn{
-	position:absolute;
-	top:10px;
-	left:10px
-}
+
 	.sidenav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 100;
-	
+    z-index: 2;
     top: 0;
     left: 0;
+	z-index:999;
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
@@ -1150,7 +1239,7 @@ margin:0;
 .categories{
 	margin-top:-145px;
 	background-color:#fff;
-	border:0 solid white;
+	border:0;
 
 	
 	
@@ -1541,7 +1630,7 @@ p span.overline{
 .search-nav{
 	position:absolute;
 	top:-120px;
-	margin-left:30px;
+	margin-left:90px;
 	height:60px;
 	width:100%;
 	z-index:2;
@@ -1550,10 +1639,10 @@ p span.overline{
 .close-btn {
     position: absolute;
 	top:30px;
-	padding:10px;
+	padding:5px;
 	background:white;
 	border-radius:300px;
-	left:1220px;
+	left:1100px;
 	z-index:100
 }
 .search-nav a:link{
@@ -1562,16 +1651,10 @@ p span.overline{
 }
 .float-bar{
 	position:fixed;
-	left:10px;
+	left: 5px;
+	top: 209px;
 	border:1px solid #dbdbdb;
 	border-radius:20px;
-	-moz-transition:all 500ms ease;
-	-webkit-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	transition:all 500ms ease;
-	-moz-backface-visibility:hidden;
-	-webkit-backface-visibility:hidden
-	;backface-visibility:hidden;
 	z-index:2;
 	opacity:0.88;
 	background:#fff;
@@ -1580,12 +1663,16 @@ p span.overline{
 	}
 	.float-bar-content .item{
 		text-align:center;
-		padding:10px 7px;
+		padding-top:15px;
 		font-size:11px;
-		width:70px;
+		width:60px;
 		height:70px;
 		border-bottom:1px solid #dbdbdb;
+		opacity:.8
 		}
+	.float-bar-content .item:hover{
+		opacity:1
+	}
 	.float-bar-content .item:last-child{
 		border-bottom:0;
 		}
@@ -1594,27 +1681,30 @@ p span.overline{
 		text-decoration:none;
 		display:block
 		}
-	.float-bar-content .item a:visited{
-			color:#12805d;
-			text-decoration:none
-			}
-		.float-bar-content .item a:hover{
-			color:#12805d;
-			text-decoration:none;
-			
-			}
-		.float-bar-content .item a:active{
-			color:#12805d;
-			text-decoration:none
-			}
-		.float-bar-content .item a span{
-			display:block
+
+	@media(max-width:768px){
+	.float-bar-content .item{
+		text-align:center;
+		padding-top:5px;
+		font-size:11px;
+		width:60px;
+		height:60px;
+		border-bottom:1px solid #dbdbdb;
+		opacity:.8
 		}
-		.float-bar-content .item a .fa{
-			margin-bottom:5px;
-			color:#12805d
-			}
-		.float-bar-content .item a .fa:before{
-			font-size:18px
-			}
 		
+	}
+	.w3-bar {
+		text-align:center;
+		margin-top:30px;
+		font-size:25px
+	}	
+	.w3-button{
+		margin:5px;
+		display:inline-block
+	}
+	.w3-button a:hover{
+		background-color:red;
+		margin:5px;
+		display:block
+	}
