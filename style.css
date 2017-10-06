@@ -4,11 +4,15 @@ body {
 	background: #FFF;
 	font-family: 'Baloo Bhaijaan', cursive;
 	font-size:16px;
+	font-weight:10px;
 	padding-top: 70px; 
+	overflow-x:hidden
+	
 }
 body a {
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	-ms-transition: 0.5s all;
@@ -25,6 +29,7 @@ body a:focus, a:hover {
 
 body::-webkit-scrollbar {
     width: 0.5em;
+
 }
  
 body::-webkit-scrollbar-track {
@@ -56,7 +61,7 @@ body::-webkit-scrollbar-thumb {
 	.modal.left .modal-content,
 	.modal.right .modal-content {
 		height: 100%;
-		overflow-y: auto;
+		overflow-y: hidden;
 	}
 	
 	.modal.left .modal-body,
@@ -168,12 +173,13 @@ label {
 }
 
 /*--banner slide show--*/
-.mySlides {display:none}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 1250px;
   position: relative;
+  left:5em;
+  height:30em;
   margin: auto;
 }
 
@@ -190,7 +196,13 @@ label {
 }
 
 
-
+/*logo image*/
+.image-head img{
+	position: absolute; top: -75px;
+	left: -10px;
+	height: 260px;
+	width: 260px
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -223,21 +235,93 @@ label {
 	overflow:hidden;
 	width:100%
 }
-#slider{
-	position:relative;
-	 -webkit-animation: mymove 50s 5 ;                   
-    animation: mymove 200s infinite;
-}
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
     from {left: 0px;}
-    to {left: -1000px}
+    to {left: -500px}
 }
 
 @keyframes mymove {
     from {left: 0px;}
-    to {left: -1000px;}
+    to {left: -500px;}
 }
+
+#slider-wrapper{
+	position:relative;
+	 -webkit-animation: mymove 100s infinite ;                   
+    animation: mymove 100s infinite;
+}
+#slider-wrapper:hover {
+    -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    animation-play-state: paused;
+}
+.arrows{
+	position:absolute;
+	margin-left:55%;
+	padding-left:20px;
+	visibility:hidden
+}
+.category-wrapper{
+	margin-left:5%;
+	border:1px solid #dbdbdb;
+	width:90%;
+	height:400px;
+	background:#fff;
+	overflow:hidden
+}
+.category-content{
+	margin-left:300px
+}
+.category-content img{
+	border:.5px solid #dbdbdb;
+}
+.category-content img:hover{
+	 -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+.side-banner {
+		margin-top:-50px
+	}
+
+@media (max-width: 784px){
+	.category-content{
+		margin-left:-10px
+	}
+	.side-banner img{
+		visibility:hidden
+	}
+	#slider-wrapper{
+	 -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    animation-play-state: paused;
+	}
+	/*logo image*/
+.image-head img{
+	position: absolute; 
+	top: -75px;
+	left: 30%;
+	height: 260px;
+	z-index: 998;
+	width: 260px
+	}
+.cart-btn{
+	position: absolute;
+	top: 10px;
+	left:10px;
+	width: 80px;
+	}
+	
+}
+@media(max-width:1000px){
+	.arrows{
+	position:absolute;
+	margin-left:55%;
+	padding-left:40px;
+	visibility:visible
+	}
+}
+
 
 
 /* Outer */
@@ -395,7 +479,7 @@ label {
 
 .top_bg{
 	background: #12805d;
-	height: 80px;
+	height: 60px;
 }
 .header_top{
 	   
@@ -777,6 +861,20 @@ ul.socials li {
 .btn-danger.my-cart-btn:focus {
     outline: none;
 }
+.cart-btn{
+	position:absolute;
+	top:20px;
+	right:55px;
+	width: 80px;
+	background: #12805D;
+	margin-top: -5px;
+	color: #fff;
+	border:0;
+	font-size: 14px;
+	z-index:999
+}
+
+
 .snipcart-details input.button {
     font-size: 14px;
     color: #fff;
@@ -912,11 +1010,15 @@ ul.socials li {
 .bag-img {
     margin-top: 1em;
 }
+
 a.collection{
-    font-size: 0.5em;
+    font-size: 0.6em;
     color: #FFA116;
     display: inline-block;
-    margin-top: -1em;
+    margin-top: 1em;
+	float:right;
+	padding:1em;
+	margin-right:80px
 }
 a.collection i {
     vertical-align: middle;
@@ -985,19 +1087,15 @@ a.collection i {
     padding: 4em 0;
 }
 /*cart toggle menu css*/
-.cart-btn{
-	position:absolute;
-	top:10px;
-	left:10px
-}
+
 	.sidenav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 100;
-	
+    z-index: 2;
     top: 0;
     left: 0;
+	z-index:999;
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
@@ -1150,7 +1248,7 @@ margin:0;
 .categories{
 	margin-top:-145px;
 	background-color:#fff;
-	border:0 solid white;
+	border:0;
 
 	
 	
@@ -1535,23 +1633,35 @@ p span.overline{
 	right:30px;
 	z-index:2;
 	}
-.search-nav input{
-	width:60em
-}
+@webkit-keyframes drop{
+		from{top:-100px;}
+		to{top:40px}
+		
+	}
+@keyframes drop{
+		from{top:-100px;}
+		to{top:40px}
+		
+	}
 .search-nav{
 	position:absolute;
 	top:-120px;
 	margin-left:90px;
-	height:60px;
+	height:90px;
+	padding:10px;
+	border-radius:10px;
 	width:100%;
 	z-index:2;
 	background-color:#12805d;
+	animation:drop;
+	animation-duration:10s;
+	-webkit-animation:drop;
+	-webkit-animation-duration:10s;
 }
 .close-btn {
     position: absolute;
 	top:30px;
 	padding:5px;
-	background:white;
 	border-radius:300px;
 	left:1100px;
 	z-index:100
@@ -1560,25 +1670,59 @@ p span.overline{
 	color:red;
 	font-size:30px
 }
+/* Style the breadcrumb list */
+ul.breadcrumb {
+	margin-top:50px;
+	margin-left:30px;
+	margin-right:30px;
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+	color: #12805d;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #12805d;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #12805d;
+    text-decoration: underline;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+.sort{
+	position:absolute;
+	margin-left:60%
+}
+
 .float-bar{
 	position:fixed;
-	left:10px;
+	left: 5px;
+	top: 209px;
 	border:1px solid #dbdbdb;
-	border-radius:20px;
-	-moz-transition:all 500ms ease;
-	-webkit-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	transition:all 500ms ease;
-	-moz-backface-visibility:hidden;
-	-webkit-backface-visibility:hidden
-	;backface-visibility:hidden;
 	z-index:2;
 	opacity:0.88;
 	background:#fff;
+	border-radius:5px
 	
 
 	}
-	.float-bar-content .item{
+.float-bar-content .item{
 		text-align:center;
 		padding-top:15px;
 		font-size:11px;
@@ -1587,19 +1731,30 @@ p span.overline{
 		border-bottom:1px solid #dbdbdb;
 		opacity:.8
 		}
-	.float-bar-content .item:hover{
+.float-bar-content .item:hover{
 		opacity:1
 	}
-	.float-bar-content .item:last-child{
+.float-bar-content .item:last-child{
 		border-bottom:0;
 		}
-	.float-bar-content .item a{
+.float-bar-content .item a{
 		color:#12805d;
 		text-decoration:none;
 		display:block
 		}
 
-	
+@media(max-width:768px){
+	.float-bar-content .item{
+		text-align:center;
+		padding-top:5px;
+		font-size:11px;
+		width:60px;
+		height:60px;
+		border-bottom:1px solid #dbdbdb;
+		opacity:.8
+		}
+		
+	}
 	.w3-bar {
 		text-align:center;
 		margin-top:30px;
