@@ -569,9 +569,11 @@ a:hover.w3-button {
 }
 /* start menu */
 .h_nav h4{
+	font-family:'Baloo Bhaijaan', cursive;
 	border-bottom: 1px solid rgb(236, 236, 236);
 	font-size: 1em;
-	color: #12805D;
+	text-align: center;
+	color: #12805d;
 	line-height: 1.8em;
 	text-transform: uppercase;
 	margin-bottom: 4%;
@@ -581,17 +583,23 @@ a:hover.w3-button {
 }
 .h_nav ul li{
 	display: block;
-	color:#00405d;
+	margin-left:2em
 }
-.h_nav a{
-
-	font-size: 0.5em;
-	color:#00405d;
+.h_nav ul li a:link{
+	font-family:'Baloo Bhaijaan', cursive;
+	display: block;
+	font-size: 0.85em;
+	color: #555;
 	text-transform: capitalize;
 	line-height: 1.8em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	line-height: 2.5em;
 }
 .h_nav ul li a:hover{
-	color:#00405d;
+	color:#FFA116;
 	text-decoration:underline;
 }
 /*----*/
@@ -2912,8 +2920,8 @@ margin:0;
 }
 .cart-btn :hover{
 	color:#fff
-}
-	.sidenav {
+	}
+.sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -2929,21 +2937,22 @@ margin:0;
 /*--cart-page--*/
 .cart-header-text{
 	position:absolute;
-	top:0
-}
+	top:1em
+	}
 
 .cart-header-text h3{
+	font-family: 'Baloo Bhaijaan', cursive;
 	color:#12805d;
 	z-index: 100;
 	text-align:center;
-	padding-right:60px;
-	padding-top:-5px;
+	margin-left:2em;
+	padding-top:.4em;
 	font-weight:5px
-}
+	}
 
 .cart-items {
 	padding: 3em 0;
-}
+	}
 .cart-items h1 {
   font-size: 2em;
   margin-bottom: 1.5em;
