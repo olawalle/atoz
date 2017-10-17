@@ -732,7 +732,6 @@
 					<li><a class="color9" href="#"><b>STORES</b></a>
 						</li>
 				 </ul> 
-		 
 			</div>
 			<div class="">
 				<button type="button" class="cart-btn" data-toggle="modal" data-target="#myModal2" onclick="openNav()">
@@ -743,24 +742,45 @@
 	</div>
 	</div>	
 </nav>
+	<div id="search" class="search">
+		<a href="javascript:void(0)" class="close-btn" value="" onclick="closeSearch()">&times;</a>
+			<div class="button_box2">
+				<form class="form-wrapper-2 cf">
+					<input type="text" placeholder="Search here..." required>
+						<select  class="categories" >
+							<option><h3>All Categories</h3></option>
+							<option><h3>For sale</h3></option>
+							<option><h3>Properties</h3></option>
+							<option><h3>Motors</h3></option>
+							<option><h3>Services</h3></option>
+							<option><h3>Jobs</h3></option>
+							<option><h3>Specials</h3></option>
+							<option><h3>Stores</h3></option>
+						</select>
+					<button type="submit">
+						<i class="glyphicon glyphicon-search" style="padding-left:7.2em;color:#000"></i>
+					</button>
+				</form>
+			</div>
+		</div>
 		<div class="product">
 			<div class="row">
 				<div class="slideshow-container">
 					<div class="mySlides fade">
 					  
-						<img src="images/banner.jpeg" style="width:90%; height:20em">
+						<a href=""><img src="images/771.jpg" style="width:100%; height:30em"></a>
 					 
 					</div>
 
 					<div class="mySlides fade">
 					  
-						<img src="images/2.jpg" style="width:90%; height:20em">
+						<a href=""><img src="images/772.jpg" style="width:100%; height:30em"></a>
 					  
 					</div>
 
 					<div class="mySlides fade">
 					  
-						<img src="images/middle.jpg" style="width:90%; height:20em">
+						<a href=""><img src="images/773.jpg" style="width:100%; height:30em"></a>
 					  
 					</div>
 
@@ -769,7 +789,7 @@
 		</div>
 		<br>
 
-					<div style="position:relative;top:-13em;left:45%">
+					<div style="position:fixed;top:-13em;left:45%">
 					  <span class="dot"></span> 
 					  <span class="dot"></span> 
 					  <span class="dot"></span> 
@@ -777,23 +797,17 @@
 				<br>
 				<div class="float-search">
 							<button type="button" class="btn btn-success" onclick="openSearch()" id="cart-button">
-								<i class="glyphicon glyphicon-search" aria-hidden="true"></i>&nbsp;Search
+								<i class="glyphicon glyphicon-search" aria-hidden="true"></i>
 							</button>
 				</div>
-				<div class="widget block block-static-block" style="margin-top:-10em">
+			<div class="cover">
+				<div class="widget block block-static-block" style="margin-top:2em">
 					<div class="cdz-best-seller-wrap cdz-products product-style08 box-product wrapz">
 						<div class="row">
 							<div class="col-sm-24">
 								<div class="block-title">
-									<p class="b-title h3"><span>Top AtoZ Deals</span>
-										<span class="arrows">
-											<a  onclick="moveLeft()">
-												<span class="glyphicon glyphicon-chevron-left" id="left"></span>
-											</a>
-											<a onclick="moveRight()">
-												<span class="glyphicon glyphicon-chevron-right" id="right"></span>
-											</a>
-										</span>
+									<p class="b-title h3"><span style="margin-left:1em">Top AtoZ Deals</span>
+										
 									</p>
 								</div>
 							</div>
@@ -802,72 +816,137 @@
 						<div class="">
 							<div class="col-sm-24 text-center ">
 								<div class="">
-									<div class="block widget block-products-list grid">
-										<div class="block-content cdz_block_59a85d573645c">
+									<div class="">
+										<div class="">
 											<div class="products wrapper grid products-grid">
-												<div class="products list items product-items same-height cdz-slider owl-carousel owl-loaded owl-drag" data-items="5" data-items-0="2" data-items-480="2" data-items-768="4" data-items-1024="5" data-items-1280="5" data-items-1440="5" data-loop="false" data-margin="0">
+												<div class="products list items product-items same-height cdz-slider owl-carousel owl-loaded " data-items="5" data-items-0="2" data-items-480="2" data-items-768="4" data-items-1024="5" data-items-1280="5" data-items-1440="5" data-loop="false" data-margin="0">
 													<div class="owl-stage-outer">
-														<div class="owl-stage" style="width: 2356px; transform: translate3d(0px, 0px, 0px); transition: 0s;">
+														<span class="arrows">
+																	<form action="" name="orderForm">
+																	<input type="BUTTON" value="Move Left" onClick="moveLeft()" />
+																	<input type="BUTTON" value="Move Right" onClick="moveRight()" />
+																	</form>
+																</span>
+														<div class="owl-stage" >
+															<div class="owl-item active" style="width: 235.6px;" >
+															   <div class="item-slider"><div id="layer2"> 
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/download.jpg" width="330" height="330" alt="" class="img-responsive"></span>
+																						</span>
+																						<span class="tooltiptext" style="font-size:1em">Click for more details...</span>
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="index.html" class="" title="Add to cart" aria-label="Add to Cart" data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em;margin-left:1em">buy now<i class="fa fa-shopping-cart" style="padding-right:1em"></i></span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Product Name				                    </a>
+																					</strong>
+																						<div class="" data-role="priceBox" data-product-id="2594">
+																							<span class="">
+																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class=" ">
+																									<span class="price">₦21,500.00</span>    </span>
+																										</span>
+
+																						</div>				                				                
+																				</div>
+																			</div>
+																		</div>
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/download.jpg" width="330" height="330" alt="" class="img-responsive"></span>
+																						</span>
+																						<span class="tooltiptext" style="font-size:1em">Click for more details...</span>
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="index.html" class="" title="Add to cart" aria-label="Add to Cart" data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em;margin-left:1em">buy now<i class="fa fa-shopping-cart" style="padding-right:1em"></i></span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Product Name				                    </a>
+																					</strong>
+																						<div class="" data-role="priceBox" data-product-id="2594">
+																							<span class="">
+																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class=" ">
+																									<span class="price">₦21,500.00</span>    </span>
+																										</span>
+
+																						</div>				                				                
+																				</div>
+																			</div>
+																		</div>
+																</div></div>
+															</div>
 															<div class="owl-item active" style="width: 235.6px;" >
 															   <div class="item-slider"> 
 																	<div class="item product product-item" id="slider">
 																		<div class="product-item-info" data-container="product-grid">
 																			<div class="product-info-top cdz-hover-section">
 																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																					<span class="">
-																						<span class="product-image-container" style="width:120px;">
-																							<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																								<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/download.jpg" width="330" height="330" alt="" class="img-responsive"></span>
 																						</span>
+																						<span class="tooltiptext" style="font-size:1em">Click for more details...</span>
 																					</span>
 																				</a>
+																				
 																		<div class="qs-button-icon">
 																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
 																				<span><span>  </span></span></a>						
-																				<div class="cdz-product-bottom">
-																					<div class="cdz-buttons-container">
-																						<div class="cdz-buttons-inner">
-																						<form data-role="tocart-form" action="http://index.html/" method="post">
-																									<input type="hidden" name="product" value="">
-																									<input type="hidden" name="uenc" value="">
-																									<input name="form_key" type="hidden" value="">				                                    
-																									 <div class="field qty box-tocart">								           
-																										<div class="control">
-																											<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																												<div class="qty-input">
-																													<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																												   </div>
-																									<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																										</div>
-																									</div>
-																									<script type="text/javascript">
-																									require(['jquery','domReady!'],function($){
-																										$(".btn-qty").click(function (event) {
-																											var $button = $(this);
-																											var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																											var defaultValue = 0;
-																											if ($button.hasClass('plus')) {
-																												var newVal = parseFloat(oldValue) + 1;
-																											} else {
-																												if (oldValue > defaultValue) {
-																													var newVal = parseFloat(oldValue) - 1;
-																												} else {
-																													newVal = defaultValue;
-																												}
-																											}
-																											$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																											event.preventDefault();
-																										});
-																							
-																									});
-																									</script>
-																								   <button type="submit" title="Add to Cart" class="action tocart primary">
-																										<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																									</button>
-																								</form>
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
 																										<div data-role="add-to-links" class="actions-secondary">
-																											 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																												<span>Watching</span>
+																											 <a href="index.html" class="" title="Add to cart" aria-label="Add to Cart" data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em;margin-left:1em">buy now<i class="fa fa-shopping-cart" style="padding-right:1em"></i></span>
 																											</a>
 																										</div>										
 																									</div>
@@ -877,12 +956,108 @@
 																					</div>
 																				<div class="product details product-item-details">
 																					 <strong class="product name product-item-name">
-																						<a class="product-item-link" href="http://single.html/">
-																							Cap Rice - 50KG				                    </a>
+																						<a class="product-item-link" href="single.html">
+																							Product Name				                    </a>
 																					</strong>
-																						<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																							<span class="price-container price-final_price tax weee">
-																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
+																						<div class="" data-role="priceBox" data-product-id="2594">
+																							<span class="">
+																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class=" ">
+																									<span class="price">₦21,500.00</span>    </span>
+																										</span>
+
+																						</div>				                				                
+																				</div>
+																			</div>
+																		</div>
+																		<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/download.jpg" width="330" height="330" alt="" class="img-responsive"></span>
+																						</span>
+																						<span class="tooltiptext" style="font-size:1em">Click for more details...</span>
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="http://index.html/#" class="" title="Add to cart" aria-label="Add to Cart" data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em;margin-left:1em">buy now<i class="fa fa-shopping-cart" style="padding-right:1em"></i></span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Product Name				                    </a>
+																					</strong>
+																						<div class="" data-role="priceBox" data-product-id="2594">
+																							<span class="">
+																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class=" ">
+																									<span class="price">₦21,500.00</span>    </span>
+																										</span>
+
+																						</div>				                				                
+																				</div>
+																			</div>
+																		</div>
+																	
+																</div>
+															</div>
+																
+															<div class="owl-item active" style="width: 235.6px;" >
+															   <div class="item-slider"> 
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/download.jpg" width="330" height="330" alt="" class="img-responsive"></span>
+																						</span>
+																						<span class="tooltiptext" style="font-size:1em">Click for more details...</span>
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="http://index.html/#" class="" title="Add to cart" aria-label="Add to Cart" data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em;margin-left:1em">buy now<i class="fa fa-shopping-cart" style="padding-right:1em"></i></span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Product Name				                    </a>
+																					</strong>
+																						<div class="" data-role="priceBox" data-product-id="2594">
+																							<span class="">
+																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class=" ">
 																									<span class="price">₦21,500.00</span>    </span>
 																										</span>
 
@@ -894,60 +1069,25 @@
 																		<div class="product-item-info" data-container="product-grid">
 																			<div class="product-info-top cdz-hover-section">
 																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																					<span class="">
-																						<span class="product-image-container" style="width:120px;">
-																							<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																								<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/download.jpg" width="330" height="330" alt="" class="img-responsive"></span>
 																						</span>
+																						<span class="tooltiptext" style="font-size:1em">Click for more details...</span>
 																					</span>
 																				</a>
+																				
 																		<div class="qs-button-icon">
 																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
 																				<span><span>  </span></span></a>						
-																				<div class="cdz-product-bottom">
-																					<div class="cdz-buttons-container">
-																						<div class="cdz-buttons-inner">
-																						<form data-role="tocart-form" action="http://index.html/" method="post">
-																									<input type="hidden" name="product" value="">
-																									<input type="hidden" name="uenc" value="">
-																									<input name="form_key" type="hidden" value="">				                                    
-																									 <div class="field qty box-tocart">								           
-																										<div class="control">
-																											<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																												<div class="qty-input">
-																													<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																												   </div>
-																									<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																										</div>
-																									</div>
-																									<script type="text/javascript">
-																									require(['jquery','domReady!'],function($){
-																										$(".btn-qty").click(function (event) {
-																											var $button = $(this);
-																											var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																											var defaultValue = 0;
-																											if ($button.hasClass('plus')) {
-																												var newVal = parseFloat(oldValue) + 1;
-																											} else {
-																												if (oldValue > defaultValue) {
-																													var newVal = parseFloat(oldValue) - 1;
-																												} else {
-																													newVal = defaultValue;
-																												}
-																											}
-																											$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																											event.preventDefault();
-																										});
-																							
-																									});
-																									</script>
-																								   <button type="submit" title="Add to Cart" class="action tocart primary">
-																										<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																									</button>
-																								</form>
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
 																										<div data-role="add-to-links" class="actions-secondary">
-																											 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																												<span>Watching</span>
+																											 <a href="http://index.html/#" class="" title="Add to cart" aria-label="Add to Cart" data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em;margin-left:1em">buy now<i class="fa fa-shopping-cart" style="padding-right:1em"></i></span>
 																											</a>
 																										</div>										
 																									</div>
@@ -957,12 +1097,12 @@
 																					</div>
 																				<div class="product details product-item-details">
 																					 <strong class="product name product-item-name">
-																						<a class="product-item-link" href="http://single.html/">
-																							Cap Rice - 50KG				                    </a>
+																						<a class="product-item-link" href="single.html">
+																							Product Name				                    </a>
 																					</strong>
-																						<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																							<span class="price-container price-final_price tax weee">
-																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
+																						<div class="" data-role="priceBox" data-product-id="2594">
+																							<span class="">
+																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class=" ">
 																									<span class="price">₦21,500.00</span>    </span>
 																										</span>
 
@@ -970,6 +1110,7 @@
 																				</div>
 																			</div>
 																		</div>
+																	
 																</div>
 															</div>
 															<div class="owl-item active" style="width: 235.6px;" >
@@ -978,60 +1119,25 @@
 																		<div class="product-item-info" data-container="product-grid">
 																			<div class="product-info-top cdz-hover-section">
 																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																					<span class="  ">
-																						<span class="product-image-container" style="width:120px;">
-																							<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																								<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/download.jpg" width="330" height="330" alt="" class="img-responsive"></span>
 																						</span>
+																						<span class="tooltiptext" style="font-size:1em">Click for more details...</span>
 																					</span>
 																				</a>
+																				
 																		<div class="qs-button-icon">
 																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
 																				<span><span>  </span></span></a>						
-																				<div class="cdz-product-bottom">
-																					<div class="cdz-buttons-container">
-																						<div class="cdz-buttons-inner">
-																						<form data-role="tocart-form" action="http://index.html/" method="post">
-																									<input type="hidden" name="product" value="">
-																									<input type="hidden" name="uenc" value="">
-																									<input name="form_key" type="hidden" value="">				                                    
-																									 <div class="field qty box-tocart">								           
-																										<div class="control">
-																											<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																												<div class="qty-input">
-																													<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																												   </div>
-																									<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																										</div>
-																									</div>
-																									<script type="text/javascript">
-																									require(['jquery','domReady!'],function($){
-																										$(".btn-qty").click(function (event) {
-																											var $button = $(this);
-																											var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																											var defaultValue = 0;
-																											if ($button.hasClass('plus')) {
-																												var newVal = parseFloat(oldValue) + 1;
-																											} else {
-																												if (oldValue > defaultValue) {
-																													var newVal = parseFloat(oldValue) - 1;
-																												} else {
-																													newVal = defaultValue;
-																												}
-																											}
-																											$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																											event.preventDefault();
-																										});
-																							
-																									});
-																									</script>
-																								   <button type="submit" title="Add to Cart" class="action tocart primary">
-																										<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																									</button>
-																								</form>
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
 																										<div data-role="add-to-links" class="actions-secondary">
-																											 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																												<span>Watching</span>
+																											 <a href="http://index.html/#" class="" title="Add to cart" aria-label="Add to Cart" data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em;margin-left:1em">buy now<i class="fa fa-shopping-cart" style="padding-right:1em"></i></span>
 																											</a>
 																										</div>										
 																									</div>
@@ -1041,12 +1147,12 @@
 																					</div>
 																				<div class="product details product-item-details">
 																					 <strong class="product name product-item-name">
-																						<a class="product-item-link" href="http://single.html/">
-																							Cap Rice - 50KG				                    </a>
+																						<a class="product-item-link" href="single.html">
+																							Product Name				                    </a>
 																					</strong>
-																						<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																							<span class="price-container price-final_price tax weee">
-																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
+																						<div class="" data-role="priceBox" data-product-id="2594">
+																							<span class="">
+																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class=" ">
 																									<span class="price">₦21,500.00</span>    </span>
 																										</span>
 
@@ -1058,61 +1164,25 @@
 																		<div class="product-item-info" data-container="product-grid">
 																			<div class="product-info-top cdz-hover-section">
 																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																					<span class="  ">
-																						<span class="product-image-container" style="width:120px;">
-																							<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																								<img  src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive">
-																							</span>
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/download.jpg" width="330" height="330" alt="" class="img-responsive"></span>
 																						</span>
+																						<span class="tooltiptext" style="font-size:1em">Click for more details...</span>
 																					</span>
 																				</a>
+																				
 																		<div class="qs-button-icon">
 																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
 																				<span><span>  </span></span></a>						
-																				<div class="cdz-product-bottom">
-																					<div class="cdz-buttons-container">
-																						<div class="cdz-buttons-inner">
-																						<form data-role="tocart-form" action="http://index.html/" method="post">
-																									<input type="hidden" name="product" value="">
-																									<input type="hidden" name="uenc" value="">
-																									<input name="form_key" type="hidden" value="">				                                    
-																									 <div class="field qty box-tocart">								           
-																										<div class="control">
-																											<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																												<div class="qty-input">
-																													<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="">
-																												   </div>
-																									<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																										</div>
-																									</div>
-																									<script type="text/javascript">
-																									require(['jquery','domReady!'],function($){
-																										$(".btn-qty").click(function (event) {
-																											var $button = $(this);
-																											var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																											var defaultValue = 0;
-																											if ($button.hasClass('plus')) {
-																												var newVal = parseFloat(oldValue) + 1;
-																											} else {
-																												if (oldValue > defaultValue) {
-																													var newVal = parseFloat(oldValue) - 1;
-																												} else {
-																													newVal = defaultValue;
-																												}
-																											}
-																											$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																											event.preventDefault();
-																										});
-																							
-																									});
-																									</script>
-																								   <button type="submit" title="Add to Cart" class="action tocart primary">
-																										<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																									</button>
-																								</form>
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
 																										<div data-role="add-to-links" class="actions-secondary">
-																											 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																												<span>Watching</span>
+																											 <a href="http://index.html/#" class="" title="Add to cart" aria-label="Add to Cart" data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em;margin-left:1em">buy now<i class="fa fa-shopping-cart" style="padding-right:1em"></i></span>
 																											</a>
 																										</div>										
 																									</div>
@@ -1122,12 +1192,12 @@
 																					</div>
 																				<div class="product details product-item-details">
 																					 <strong class="product name product-item-name">
-																						<a class="product-item-link" href="http://single.html/">
-																							Cap Rice - 50KG				                    </a>
+																						<a class="product-item-link" href="single.html">
+																							Product Name				                    </a>
 																					</strong>
-																						<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																							<span class="price-container price-final_price tax weee">
-																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
+																						<div class="" data-role="priceBox" data-product-id="2594">
+																							<span class="">
+																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class=" ">
 																									<span class="price">₦21,500.00</span>    </span>
 																										</span>
 
@@ -1135,6 +1205,7 @@
 																				</div>
 																			</div>
 																		</div>
+																	
 																</div>
 															</div>
 															<div class="owl-item active" style="width: 235.6px;" >
@@ -1143,60 +1214,25 @@
 																		<div class="product-item-info" data-container="product-grid">
 																			<div class="product-info-top cdz-hover-section">
 																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																					<span class="  ">
-																						<span class="product-image-container" style="width:120px;">
-																							<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																								<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/download.jpg" width="330" height="330" alt="" class="img-responsive"></span>
 																						</span>
+																						<span class="tooltiptext" style="font-size:1em">Click for more details...</span>
 																					</span>
 																				</a>
+																				
 																		<div class="qs-button-icon">
 																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
 																				<span><span>  </span></span></a>						
-																				<div class="cdz-product-bottom">
-																					<div class="cdz-buttons-container">
-																						<div class="cdz-buttons-inner">
-																						<form data-role="tocart-form" action="http://index.html/" method="post">
-																									<input type="hidden" name="product" value="">
-																									<input type="hidden" name="uenc" value="">
-																									<input name="form_key" type="hidden" value="">				                                    
-																									 <div class="field qty box-tocart">								           
-																										<div class="control">
-																											<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																												<div class="qty-input">
-																													<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																												   </div>
-																									<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																										</div>
-																									</div>
-																									<script type="text/javascript">
-																									require(['jquery','domReady!'],function($){
-																										$(".btn-qty").click(function (event) {
-																											var $button = $(this);
-																											var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																											var defaultValue = 0;
-																											if ($button.hasClass('plus')) {
-																												var newVal = parseFloat(oldValue) + 1;
-																											} else {
-																												if (oldValue > defaultValue) {
-																													var newVal = parseFloat(oldValue) - 1;
-																												} else {
-																													newVal = defaultValue;
-																												}
-																											}
-																											$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																											event.preventDefault();
-																										});
-																							
-																									});
-																									</script>
-																								   <button type="submit" title="Add to Cart" class="action tocart primary">
-																										<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																									</button>
-																								</form>
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
 																										<div data-role="add-to-links" class="actions-secondary">
-																											 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																												<span>Watching</span>
+																											 <a href="http://index.html/#" class="" title="Add to cart" aria-label="Add to Cart" data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em;margin-left:1em">buy now<i class="fa fa-shopping-cart" style="padding-right:1em"></i></span>
 																											</a>
 																										</div>										
 																									</div>
@@ -1206,12 +1242,12 @@
 																					</div>
 																				<div class="product details product-item-details">
 																					 <strong class="product name product-item-name">
-																						<a class="product-item-link" href="http://single.html/">
-																							Cap Rice - 50KG				                    </a>
+																						<a class="product-item-link" href="single.html">
+																							Product Name				                    </a>
 																					</strong>
-																						<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																							<span class="price-container price-final_price tax weee">
-																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
+																						<div class="" data-role="priceBox" data-product-id="2594">
+																							<span class="">
+																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class=" ">
 																									<span class="price">₦21,500.00</span>    </span>
 																										</span>
 
@@ -1223,60 +1259,25 @@
 																		<div class="product-item-info" data-container="product-grid">
 																			<div class="product-info-top cdz-hover-section">
 																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																					<span class="  ">
-																						<span class="product-image-container" style="width:120px;">
-																							<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																								<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/download.jpg" width="330" height="330" alt="" class="img-responsive"></span>
 																						</span>
+																						<span class="tooltiptext" style="font-size:1em">Click for more details...</span>
 																					</span>
 																				</a>
+																				
 																		<div class="qs-button-icon">
 																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
 																				<span><span>  </span></span></a>						
-																				<div class="cdz-product-bottom">
-																					<div class="cdz-buttons-container">
-																						<div class="cdz-buttons-inner">
-																						<form data-role="tocart-form" action="http://index.html/" method="post">
-																									<input type="hidden" name="product" value="">
-																									<input type="hidden" name="uenc" value="">
-																									<input name="form_key" type="hidden" value="">				                                    
-																									 <div class="field qty box-tocart">								           
-																										<div class="control">
-																											<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																												<div class="qty-input">
-																													<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																												   </div>
-																									<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																										</div>
-																									</div>
-																									<script type="text/javascript">
-																									require(['jquery','domReady!'],function($){
-																										$(".btn-qty").click(function (event) {
-																											var $button = $(this);
-																											var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																											var defaultValue = 0;
-																											if ($button.hasClass('plus')) {
-																												var newVal = parseFloat(oldValue) + 1;
-																											} else {
-																												if (oldValue > defaultValue) {
-																													var newVal = parseFloat(oldValue) - 1;
-																												} else {
-																													newVal = defaultValue;
-																												}
-																											}
-																											$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																											event.preventDefault();
-																										});
-																							
-																									});
-																									</script>
-																								   <button type="submit" title="Add to Cart" class="action tocart primary">
-																										<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																									</button>
-																								</form>
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
 																										<div data-role="add-to-links" class="actions-secondary">
-																											 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																												<span>Watching</span>
+																											 <a href="http://index.html/#" class="" title="Add to cart" aria-label="Add to Cart" data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em;margin-left:1em">buy now<i class="fa fa-shopping-cart" style="padding-right:1em"></i></span>
 																											</a>
 																										</div>										
 																									</div>
@@ -1286,12 +1287,12 @@
 																					</div>
 																				<div class="product details product-item-details">
 																					 <strong class="product name product-item-name">
-																						<a class="product-item-link" href="http://single.html/">
-																							Cap Rice - 50KG				                    </a>
+																						<a class="product-item-link" href="single.html">
+																							Product Name				                    </a>
 																					</strong>
-																						<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																							<span class="price-container price-final_price tax weee">
-																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
+																						<div class="" data-role="priceBox" data-product-id="2594">
+																							<span class="">
+																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class=" ">
 																									<span class="price">₦21,500.00</span>    </span>
 																										</span>
 
@@ -1299,334 +1300,7 @@
 																				</div>
 																			</div>
 																		</div>
-																</div>
-															</div>
-															<div class="owl-item active" style="width: 235.6px;" >
-															   <div class="item-slider"> 
-																	<div class="item product product-item" id="slider">
-																		<div class="product-item-info" data-container="product-grid">
-																			<div class="product-info-top cdz-hover-section">
-																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																					<span class="  ">
-																						<span class="product-image-container" style="width:120px;">
-																							<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																								<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																						</span>
-																					</span>
-																				</a>
-																		<div class="qs-button-icon">
-																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																				<span><span>  </span></span></a>						
-																				<div class="cdz-product-bottom">
-																					<div class="cdz-buttons-container">
-																						<div class="cdz-buttons-inner">
-																						<form data-role="tocart-form" action="http://index.html/" method="post">
-																									<input type="hidden" name="product" value="">
-																									<input type="hidden" name="uenc" value="">
-																									<input name="form_key" type="hidden" value="">				                                    
-																									 <div class="field qty box-tocart">								           
-																										<div class="control">
-																											<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																												<div class="qty-input">
-																													<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																												   </div>
-																									<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																										</div>
-																									</div>
-																									<script type="text/javascript">
-																									require(['jquery','domReady!'],function($){
-																										$(".btn-qty").click(function (event) {
-																											var $button = $(this);
-																											var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																											var defaultValue = 0;
-																											if ($button.hasClass('plus')) {
-																												var newVal = parseFloat(oldValue) + 1;
-																											} else {
-																												if (oldValue > defaultValue) {
-																													var newVal = parseFloat(oldValue) - 1;
-																												} else {
-																													newVal = defaultValue;
-																												}
-																											}
-																											$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																											event.preventDefault();
-																										});
-																							
-																									});
-																									</script>
-																								   <button type="submit" title="Add to Cart" class="action tocart primary">
-																										<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																									</button>
-																								</form>
-																										<div data-role="add-to-links" class="actions-secondary">
-																											 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																												<span>Watching</span>
-																											</a>
-																										</div>										
-																									</div>
-																								</div>
-																							</div>
-																						</div> 
-																					</div>
-																				<div class="product details product-item-details">
-																					 <strong class="product name product-item-name">
-																						<a class="product-item-link" href="http://single.html/">
-																							Cap Rice - 50KG				                    </a>
-																					</strong>
-																						<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																							<span class="price-container price-final_price tax weee">
-																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																									<span class="price">₦21,500.00</span>    </span>
-																										</span>
-
-																						</div>				                				                
-																				</div>
-																			</div>
-																		</div>
-																	<div class="item product product-item" id="slider">
-																		<div class="product-item-info" data-container="product-grid">
-																			<div class="product-info-top cdz-hover-section">
-																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																					<span class="  ">
-																						<span class="product-image-container" style="width:120px;">
-																							<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																								<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																						</span>
-																					</span>
-																				</a>
-																		<div class="qs-button-icon">
-																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																				<span><span>  </span></span></a>						
-																				<div class="cdz-product-bottom">
-																					<div class="cdz-buttons-container">
-																						<div class="cdz-buttons-inner">
-																						<form data-role="tocart-form" action="http://index.html/" method="post">
-																									<input type="hidden" name="product" value="">
-																									<input type="hidden" name="uenc" value="">
-																									<input name="form_key" type="hidden" value="">				                                    
-																									 <div class="field qty box-tocart">								           
-																										<div class="control">
-																											<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																												<div class="qty-input">
-																													<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																												   </div>
-																									<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																										</div>
-																									</div>
-																									<script type="text/javascript">
-																									require(['jquery','domReady!'],function($){
-																										$(".btn-qty").click(function (event) {
-																											var $button = $(this);
-																											var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																											var defaultValue = 0;
-																											if ($button.hasClass('plus')) {
-																												var newVal = parseFloat(oldValue) + 1;
-																											} else {
-																												if (oldValue > defaultValue) {
-																													var newVal = parseFloat(oldValue) - 1;
-																												} else {
-																													newVal = defaultValue;
-																												}
-																											}
-																											$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																											event.preventDefault();
-																										});
-																							
-																									});
-																									</script>
-																								   <button type="submit" title="Add to Cart" class="action tocart primary">
-																										<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																									</button>
-																								</form>
-																										<div data-role="add-to-links" class="actions-secondary">
-																											 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																												<span>Watching</span>
-																											</a>
-																										</div>										
-																									</div>
-																								</div>
-																							</div>
-																						</div> 
-																					</div>
-																				<div class="product details product-item-details">
-																					 <strong class="product name product-item-name">
-																						<a class="product-item-link" href="http://single.html/">
-																							Cap Rice - 50KG				                    </a>
-																					</strong>
-																						<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																							<span class="price-container price-final_price tax weee">
-																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																									<span class="price">₦21,500.00</span>    </span>
-																										</span>
-
-																						</div>				                				                
-																				</div>
-																			</div>
-																		</div>
-																</div>
-															</div>
-															<div class="owl-item active" style="width: 235.6px;" >
-															   <div class="item-slider"> 
-																	<div class="item product product-item" id="slider">
-																		<div class="product-item-info" data-container="product-grid">
-																			<div class="product-info-top cdz-hover-section">
-																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																					<span class="  ">
-																						<span class="product-image-container" style="width:120px;">
-																							<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																								<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																						</span>
-																					</span>
-																				</a>
-																		<div class="qs-button-icon">
-																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																				<span><span>  </span></span></a>						
-																				<div class="cdz-product-bottom">
-																					<div class="cdz-buttons-container">
-																						<div class="cdz-buttons-inner">
-																						<form data-role="tocart-form" action="http://index.html/" method="post">
-																									<input type="hidden" name="product" value="">
-																									<input type="hidden" name="uenc" value="">
-																									<input name="form_key" type="hidden" value="">				                                    
-																									 <div class="field qty box-tocart">								           
-																										<div class="control">
-																											<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																												<div class="qty-input">
-																													<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																												   </div>
-																									<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																										</div>
-																									</div>
-																									<script type="text/javascript">
-																									require(['jquery','domReady!'],function($){
-																										$(".btn-qty").click(function (event) {
-																											var $button = $(this);
-																											var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																											var defaultValue = 0;
-																											if ($button.hasClass('plus')) {
-																												var newVal = parseFloat(oldValue) + 1;
-																											} else {
-																												if (oldValue > defaultValue) {
-																													var newVal = parseFloat(oldValue) - 1;
-																												} else {
-																													newVal = defaultValue;
-																												}
-																											}
-																											$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																											event.preventDefault();
-																										});
-																							
-																									});
-																									</script>
-																								   <button type="submit" title="Add to Cart" class="action tocart primary">
-																										<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																									</button>
-																								</form>
-																										<div data-role="add-to-links" class="actions-secondary">
-																											 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																												<span>Watching</span>
-																											</a>
-																										</div>										
-																									</div>
-																								</div>
-																							</div>
-																						</div> 
-																					</div>
-																				<div class="product details product-item-details">
-																					 <strong class="product name product-item-name">
-																						<a class="product-item-link" href="http://single.html/">
-																							Cap Rice - 50KG				                    </a>
-																					</strong>
-																						<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																							<span class="price-container price-final_price tax weee">
-																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																									<span class="price">₦21,500.00</span>    </span>
-																										</span>
-
-																						</div>				                				                
-																				</div>
-																			</div>
-																		</div>
-																	<div class="item product product-item" id="slider">
-																		<div class="product-item-info" data-container="product-grid">
-																			<div class="product-info-top cdz-hover-section">
-																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																					<span class="  ">
-																						<span class="product-image-container" style="width:120px;">
-																							<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																								<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																						</span>
-																					</span>
-																				</a>
-																		<div class="qs-button-icon">
-																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																				<span><span>  </span></span></a>						
-																				<div class="cdz-product-bottom">
-																					<div class="cdz-buttons-container">
-																						<div class="cdz-buttons-inner">
-																						<form data-role="tocart-form" action="http://index.html/" method="post">
-																									<input type="hidden" name="product" value="">
-																									<input type="hidden" name="uenc" value="">
-																									<input name="form_key" type="hidden" value="">				                                    
-																									 <div class="field qty box-tocart">								           
-																										<div class="control">
-																											<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																												<div class="qty-input">
-																													<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																												   </div>
-																									<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																										</div>
-																									</div>
-																									<script type="text/javascript">
-																									require(['jquery','domReady!'],function($){
-																										$(".btn-qty").click(function (event) {
-																											var $button = $(this);
-																											var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																											var defaultValue = 0;
-																											if ($button.hasClass('plus')) {
-																												var newVal = parseFloat(oldValue) + 1;
-																											} else {
-																												if (oldValue > defaultValue) {
-																													var newVal = parseFloat(oldValue) - 1;
-																												} else {
-																													newVal = defaultValue;
-																												}
-																											}
-																											$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																											event.preventDefault();
-																										});
-																							
-																									});
-																									</script>
-																								   <button type="submit" title="Add to Cart" class="action tocart primary">
-																										<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																									</button>
-																								</form>
-																										<div data-role="add-to-links" class="actions-secondary">
-																											 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																												<span>Watching</span>
-																											</a>
-																										</div>										
-																									</div>
-																								</div>
-																							</div>
-																						</div> 
-																					</div>
-																				<div class="product details product-item-details">
-																					 <strong class="product name product-item-name">
-																						<a class="product-item-link" href="http://single.html/">
-																							Cap Rice - 50KG				                    </a>
-																					</strong>
-																						<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																							<span class="price-container price-final_price tax weee">
-																								<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																									<span class="price">₦21,500.00</span>    </span>
-																										</span>
-
-																						</div>				                				                
-																				</div>
-																			</div>
-																		</div>
+																	
 																</div>
 															</div>	
 															<div class="owl-dots disabled">
@@ -1643,907 +1317,456 @@
 					</div>
 					</div>
 				</div>
+
 				<br>
-	<div class="widget block block-static-block">
-		<div class="cdz-best-seller-wrap cdz-products product-style08 box-product wrapz">
-			<div class="row">
-				<div class="col-sm-24">
-					<div class="block-title">
-						<p class="b-title h3"><span>Top AtoZ stores</span></p>
-					</div>
-				</div>
-			</div>
-			<div class="row" id="slider-wrapper">
-	<div class="wrap>
-		<div class="col-sm-24 text-center ">
-			<div class="ajax_aff8572f7c4cf49968fc811077687e9b">
-				<div class="block widget block-products-list grid">
-					<div class="block-content cdz_block_59a85d573645c">
-						<div class="products wrapper grid products-grid">
-							<div class="products list items product-items same-height cdz-slider owl-carousel owl-loaded owl-drag" data-items="5" data-items-0="2" data-items-480="2" data-items-768="4" data-items-1024="5" data-items-1280="5" data-items-1440="5" data-loop="false" data-margin="0">
-								<div class="owl-stage-outer">
-								   <div class="owl-stage" style="width: 2356px; transform: translate3d(0px, 0px, 0px); transition: 0s;">
-									   <div class="owl-item active" style="width: 235.6px;" >
-												   <div class="item-slider"> 
-														<div class="item product product-item" id="slider">
-															<div class="product-item-info" data-container="product-grid">
-																<div class="product-info-top cdz-hover-section">
-																	<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																		<span class="main-image">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																		<span class="  ">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																	</a>
-															<div class="qs-button-icon">
-																<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																	<span><span>  </span></span></a>						
-																	<div class="cdz-product-bottom">
-																		<div class="cdz-buttons-container">
-																			<div class="cdz-buttons-inner">
-																			<form data-role="tocart-form" action="http://index.html/" method="post">
-																						<input type="hidden" name="product" value="">
-																						<input type="hidden" name="uenc" value="">
-																						<input name="form_key" type="hidden" value="">				                                    
-																						 <div class="field qty box-tocart">								           
-																							<div class="control">
-																								<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																									<div class="qty-input">
-																										<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																									   </div>
-																						<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																							</div>
-																						</div>
-																						<script type="text/javascript">
-																						require(['jquery','domReady!'],function($){
-																							$(".btn-qty").click(function (event) {
-																								var $button = $(this);
-																								var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																								var defaultValue = 0;
-																								if ($button.hasClass('plus')) {
-																									var newVal = parseFloat(oldValue) + 1;
-																								} else {
-																									if (oldValue > defaultValue) {
-																										var newVal = parseFloat(oldValue) - 1;
-																									} else {
-																										newVal = defaultValue;
-																									}
-																								}
-																								$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																								event.preventDefault();
-																							});
+			<div class="widget block block-static-block">
+					<div class="cdz-best-seller-wrap cdz-products product-style08 box-product wrapz">
+						<div class="row">
+							<div class="col-sm-24">
+								<div class="block-title">
+									<p class="b-title h3"><span style="margin-left:1em">Top AtoZ Deals</span>
+										
+									</p>
+								</div>
+							</div>
+						</div>
+					<div class="row" id="slider-wrapper">
+						<div class="">
+							<div class="col-sm-24 text-center ">
+								<div class="">
+									<div class="">
+										<div class="">
+											<div class="products wrapper grid products-grid">
+												<div class="products list items product-items same-height cdz-slider owl-carousel owl-loaded " data-items="5" data-items-0="2" data-items-480="2" data-items-768="4" data-items-1024="5" data-items-1280="5" data-items-1440="5" data-loop="false" data-margin="0">
+													<div class="owl-stage-outer">
+														<span class="arrows">
+																	<form action="" name="orderForm">
+																	<input type="BUTTON" value="Move Left" onClick="moveLeft()" />
+																	<input type="BUTTON" value="Move Right" onClick="moveRight()" />
+																	</form>
+																</span>
+														<div class="owl-stage" >
+															<div class="owl-item active" style="width: 235.6px;" >
+															   <div class="item-slider"><div id="layer2"> 
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/store.png" width="250" height="250" alt="" class="img-responsive"></span>
+																						</span>
+																						 
+																					</span>
+																				</a>
 																				
-																						});
-																						</script>
-																					   <button type="submit" title="Add to Cart" class="action tocart primary">
-																							<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																						</button>
-																					</form>
-																							<div data-role="add-to-links" class="actions-secondary">
-																								 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																									<span>Watching</span>
-																								</a>
-																							</div>										
-																						</div>
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="store.html" class="" title=" " aria-label=" " data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em ">Explore Store </span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
 																					</div>
+																				<div class="product details product-item-details" style="margin-top:5em">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Store Name				                    </a>
+																					</strong>
+																						 				                				                
 																				</div>
-																			</div> 
+																			</div>
 																		</div>
-																	<div class="product details product-item-details">
-																		 <strong class="product name product-item-name">
-																			<a class="product-item-link" href="http://single.html/">
-																				Cap Rice - 50KG				                    </a>
-																		</strong>
-																			<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																				<span class="price-container price-final_price tax weee">
-																					<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																						<span class="price">₦21,500.00</span>    </span>
-																							</span>
-
-																			</div>				                				                
-																	</div>
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/store.png" width="250" height="250" alt="" class="img-responsive"></span>
+																						</span>
+																						 
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="store.html" class="" title=" " aria-label=" " data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em ">Explore Store </span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details" style="margin-top:5em">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Store Name				                    </a>
+																					</strong>
+																						 				                				                
+																				</div>
+																			</div>
+																		</div>
+																</div></div>
+															</div>
+															<div class="owl-item active" style="width: 235.6px;" >
+															   <div class="item-slider"> 
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/store.png" width="250" height="250" alt="" class="img-responsive"></span>
+																						</span>
+																						 
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="store.html" class="" title=" " aria-label=" " data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em ">Explore Store </span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details" style="margin-top:5em">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Store Name				                    </a>
+																					</strong>
+																						 				                				                
+																				</div>
+																			</div>
+																		</div>
+																		<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/store.png" width="250" height="250" alt="" class="img-responsive"></span>
+																						</span>
+																						 
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="http://store.html/#" class="" title=" " aria-label=" " data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em ">Explore Store </span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details" style="margin-top:5em">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Store Name				                    </a>
+																					</strong>
+																						 				                				                
+																				</div>
+																			</div>
+																		</div>
+																	
 																</div>
 															</div>
-														<div class="item product product-item" id="slider">
-															<div class="product-item-info" data-container="product-grid">
-																<div class="product-info-top cdz-hover-section">
-																	<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																		<span class="main-image">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																		<span class="  ">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																	</a>
-															<div class="qs-button-icon">
-																<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																	<span><span>  </span></span></a>						
-																	<div class="cdz-product-bottom">
-																		<div class="cdz-buttons-container">
-																			<div class="cdz-buttons-inner">
-																			<form data-role="tocart-form" action="http://index.html/" method="post">
-																						<input type="hidden" name="product" value="">
-																						<input type="hidden" name="uenc" value="">
-																						<input name="form_key" type="hidden" value="">				                                    
-																						 <div class="field qty box-tocart">								           
-																							<div class="control">
-																								<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																									<div class="qty-input">
-																										<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																									   </div>
-																						<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																							</div>
-																						</div>
-																						<script type="text/javascript">
-																						require(['jquery','domReady!'],function($){
-																							$(".btn-qty").click(function (event) {
-																								var $button = $(this);
-																								var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																								var defaultValue = 0;
-																								if ($button.hasClass('plus')) {
-																									var newVal = parseFloat(oldValue) + 1;
-																								} else {
-																									if (oldValue > defaultValue) {
-																										var newVal = parseFloat(oldValue) - 1;
-																									} else {
-																										newVal = defaultValue;
-																									}
-																								}
-																								$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																								event.preventDefault();
-																							});
+																
+															<div class="owl-item active" style="width: 235.6px;" >
+															   <div class="item-slider"> 
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/store.png" width="250" height="250" alt="" class="img-responsive"></span>
+																						</span>
+																						 
+																					</span>
+																				</a>
 																				
-																						});
-																						</script>
-																					   <button type="submit" title="Add to Cart" class="action tocart primary">
-																							<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																						</button>
-																					</form>
-																							<div data-role="add-to-links" class="actions-secondary">
-																								 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																									<span>Watching</span>
-																								</a>
-																							</div>										
-																						</div>
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="http://store.html/#" class="" title=" " aria-label=" " data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em ">Explore Store </span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
 																					</div>
+																				<div class="product details product-item-details" style="margin-top:5em">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Store Name				                    </a>
+																					</strong>
+																						 				                				                
 																				</div>
-																			</div> 
+																			</div>
 																		</div>
-																	<div class="product details product-item-details">
-																		 <strong class="product name product-item-name">
-																			<a class="product-item-link" href="http://single.html/">
-																				Cap Rice - 50KG				                    </a>
-																		</strong>
-																			<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																				<span class="price-container price-final_price tax weee">
-																					<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																						<span class="price">₦21,500.00</span>    </span>
-																							</span>
-
-																			</div>				                				                
-																	</div>
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/store.png" width="250" height="250" alt="" class="img-responsive"></span>
+																						</span>
+																						 
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="http://store.html/#" class="" title=" " aria-label=" " data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em ">Explore Store </span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details" style="margin-top:5em">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Store Name				                    </a>
+																					</strong>
+																						 				                				                
+																				</div>
+																			</div>
+																		</div>
+																	
 																</div>
 															</div>
+															<div class="owl-item active" style="width: 235.6px;" >
+															   <div class="item-slider"> 
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/store.png" width="250" height="250" alt="" class="img-responsive"></span>
+																						</span>
+																						 
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="http://store.html/#" class="" title=" " aria-label=" " data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em ">Explore Store </span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details" style="margin-top:5em">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Store Name				                    </a>
+																					</strong>
+																						 				                				                
+																				</div>
+																			</div>
+																		</div>
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/store.png" width="250" height="250" alt="" class="img-responsive"></span>
+																						</span>
+																						 
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="http://store.html/#" class="" title=" " aria-label=" " data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em ">Explore Store </span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details" style="margin-top:5em">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Store Name				                    </a>
+																					</strong>
+																						 				                				                
+																				</div>
+																			</div>
+																		</div>
+																	
+																</div>
+															</div>
+															<div class="owl-item active" style="width: 235.6px;" >
+															   <div class="item-slider"> 
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/store.png" width="250" height="250" alt="" class="img-responsive"></span>
+																						</span>
+																						 
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="http://store.html/#" class="" title=" " aria-label=" " data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em ">Explore Store </span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details" style="margin-top:5em">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Store Name				                    </a>
+																					</strong>
+																						 				                				                
+																				</div>
+																			</div>
+																		</div>
+																	<div class="item product product-item" id="slider">
+																		<div class="product-item-info" data-container="product-grid">
+																			<div class="product-info-top cdz-hover-section">
+																				<a href="single.html" class="product photo product-item-photo" tabindex="-1">
+																					<span class="product-image">
+																						<span class="product-image-container" style="width:250px;height:100px;">
+																							<span class="product-image-wrapper" style="padding-bottom:100%;">
+																								<img    src="images/store.png" width="250" height="250" alt="" class="img-responsive"></span>
+																						</span>
+																						 
+																					</span>
+																				</a>
+																				
+																		<div class="qs-button-icon">
+																			<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
+																				<span><span>  </span></span></a>						
+																				<div class="">
+																					<div class="">
+																						<div class="">
+							
+																										<div data-role="add-to-links" class="actions-secondary">
+																											 <a href="http://store.html/#" class="" title=" " aria-label=" " data-post="" data-action="add-to-wishlist" role="button">
+																												<span style="color:#fff;background:#ffa116;padding:.6em ">Explore Store </span>
+																											</a>
+																										</div>										
+																									</div>
+																								</div>
+																							</div>
+																						</div> 
+																					</div>
+																				<div class="product details product-item-details" style="margin-top:5em">
+																					 <strong class="product name product-item-name">
+																						<a class="product-item-link" href="single.html">
+																							Store Name				                   
+																							</a>
+																					</strong>
+																						 				                				                
+																				</div>
+																			</div>
+																		</div>
+																	
+																</div>
+															</div>	
+															<div class="owl-dots disabled">
+															</div>
+														</div>
 													</div>
 												</div>
-												<div class="owl-item active" style="width: 235.6px;" >
-												   <div class="item-slider"> 
-														<div class="item product product-item" id="slider">
-															<div class="product-item-info" data-container="product-grid">
-																<div class="product-info-top cdz-hover-section">
-																	<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																		<span class="main-image">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																		<span class="  ">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																	</a>
-															<div class="qs-button-icon">
-																<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																	<span><span>  </span></span></a>						
-																	<div class="cdz-product-bottom">
-																		<div class="cdz-buttons-container">
-																			<div class="cdz-buttons-inner">
-																			<form data-role="tocart-form" action="http://index.html/" method="post">
-																						<input type="hidden" name="product" value="">
-																						<input type="hidden" name="uenc" value="">
-																						<input name="form_key" type="hidden" value="">				                                    
-																						 <div class="field qty box-tocart">								           
-																							<div class="control">
-																								<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																									<div class="qty-input">
-																										<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																									   </div>
-																						<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																							</div>
-																						</div>
-																						<script type="text/javascript">
-																						require(['jquery','domReady!'],function($){
-																							$(".btn-qty").click(function (event) {
-																								var $button = $(this);
-																								var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																								var defaultValue = 0;
-																								if ($button.hasClass('plus')) {
-																									var newVal = parseFloat(oldValue) + 1;
-																								} else {
-																									if (oldValue > defaultValue) {
-																										var newVal = parseFloat(oldValue) - 1;
-																									} else {
-																										newVal = defaultValue;
-																									}
-																								}
-																								$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																								event.preventDefault();
-																							});
-																				
-																						});
-																						</script>
-																					   <button type="submit" title="Add to Cart" class="action tocart primary">
-																							<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																						</button>
-																					</form>
-																							<div data-role="add-to-links" class="actions-secondary">
-																								 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																									<span>Watching</span>
-																								</a>
-																							</div>										
-																						</div>
-																					</div>
-																				</div>
-																			</div> 
-																		</div>
-																	<div class="product details product-item-details">
-																		 <strong class="product name product-item-name">
-																			<a class="product-item-link" href="http://single.html/">
-																				Cap Rice - 50KG				                    </a>
-																		</strong>
-																			<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																				<span class="price-container price-final_price tax weee">
-																					<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																						<span class="price">₦21,500.00</span>    </span>
-																							</span>
-
-																			</div>				                				                
-																	</div>
-																</div>
-															</div>
-														<div class="item product product-item" id="slider">
-															<div class="product-item-info" data-container="product-grid">
-																<div class="product-info-top cdz-hover-section">
-																	<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																		<span class="main-image">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																		<span class="  ">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																	</a>
-															<div class="qs-button-icon">
-																<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																	<span><span>  </span></span></a>						
-																	<div class="cdz-product-bottom">
-																		<div class="cdz-buttons-container">
-																			<div class="cdz-buttons-inner">
-																			<form data-role="tocart-form" action="http://index.html/" method="post">
-																						<input type="hidden" name="product" value="">
-																						<input type="hidden" name="uenc" value="">
-																						<input name="form_key" type="hidden" value="">				                                    
-																						 <div class="field qty box-tocart">								           
-																							<div class="control">
-																								<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																									<div class="qty-input">
-																										<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																									   </div>
-																						<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																							</div>
-																						</div>
-																						<script type="text/javascript">
-																						require(['jquery','domReady!'],function($){
-																							$(".btn-qty").click(function (event) {
-																								var $button = $(this);
-																								var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																								var defaultValue = 0;
-																								if ($button.hasClass('plus')) {
-																									var newVal = parseFloat(oldValue) + 1;
-																								} else {
-																									if (oldValue > defaultValue) {
-																										var newVal = parseFloat(oldValue) - 1;
-																									} else {
-																										newVal = defaultValue;
-																									}
-																								}
-																								$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																								event.preventDefault();
-																							});
-																				
-																						});
-																						</script>
-																					   <button type="submit" title="Add to Cart" class="action tocart primary">
-																							<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																						</button>
-																					</form>
-																							<div data-role="add-to-links" class="actions-secondary">
-																								 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																									<span>Watching</span>
-																								</a>
-																							</div>										
-																						</div>
-																					</div>
-																				</div>
-																			</div> 
-																		</div>
-																	<div class="product details product-item-details">
-																		 <strong class="product name product-item-name">
-																			<a class="product-item-link" href="http://single.html/">
-																				Cap Rice - 50KG				                    </a>
-																		</strong>
-																			<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																				<span class="price-container price-final_price tax weee">
-																					<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																						<span class="price">₦21,500.00</span>    </span>
-																							</span>
-
-																			</div>				                				                
-																	</div>
-																</div>
-															</div>
-													</div>
-												</div>
-												<div class="owl-item active" style="width: 235.6px;" >
-												   <div class="item-slider"> 
-														<div class="item product product-item" id="slider">
-															<div class="product-item-info" data-container="product-grid">
-																<div class="product-info-top cdz-hover-section">
-																	<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																		<span class="main-image">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																		<span class="  ">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																	</a>
-															<div class="qs-button-icon">
-																<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																	<span><span>  </span></span></a>						
-																	<div class="cdz-product-bottom">
-																		<div class="cdz-buttons-container">
-																			<div class="cdz-buttons-inner">
-																			<form data-role="tocart-form" action="http://index.html/" method="post">
-																						<input type="hidden" name="product" value="">
-																						<input type="hidden" name="uenc" value="">
-																						<input name="form_key" type="hidden" value="">				                                    
-																						 <div class="field qty box-tocart">								           
-																							<div class="control">
-																								<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																									<div class="qty-input">
-																										<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																									   </div>
-																						<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																							</div>
-																						</div>
-																						<script type="text/javascript">
-																						require(['jquery','domReady!'],function($){
-																							$(".btn-qty").click(function (event) {
-																								var $button = $(this);
-																								var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																								var defaultValue = 0;
-																								if ($button.hasClass('plus')) {
-																									var newVal = parseFloat(oldValue) + 1;
-																								} else {
-																									if (oldValue > defaultValue) {
-																										var newVal = parseFloat(oldValue) - 1;
-																									} else {
-																										newVal = defaultValue;
-																									}
-																								}
-																								$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																								event.preventDefault();
-																							});
-																				
-																						});
-																						</script>
-																					   <button type="submit" title="Add to Cart" class="action tocart primary">
-																							<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																						</button>
-																					</form>
-																							<div data-role="add-to-links" class="actions-secondary">
-																								 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																									<span>Watching</span>
-																								</a>
-																							</div>										
-																						</div>
-																					</div>
-																				</div>
-																			</div> 
-																		</div>
-																	<div class="product details product-item-details">
-																		 <strong class="product name product-item-name">
-																			<a class="product-item-link" href="http://single.html/">
-																				Cap Rice - 50KG				                    </a>
-																		</strong>
-																			<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																				<span class="price-container price-final_price tax weee">
-																					<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																						<span class="price">₦21,500.00</span>    </span>
-																							</span>
-
-																			</div>				                				                
-																	</div>
-																</div>
-															</div>
-														<div class="item product product-item" id="slider">
-															<div class="product-item-info" data-container="product-grid">
-																<div class="product-info-top cdz-hover-section">
-																	<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																		<span class="main-image">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																		<span class="  ">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																	</a>
-															<div class="qs-button-icon">
-																<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																	<span><span>  </span></span></a>						
-																	<div class="cdz-product-bottom">
-																		<div class="cdz-buttons-container">
-																			<div class="cdz-buttons-inner">
-																			<form data-role="tocart-form" action="http://index.html/" method="post">
-																						<input type="hidden" name="product" value="">
-																						<input type="hidden" name="uenc" value="">
-																						<input name="form_key" type="hidden" value="">				                                    
-																						 <div class="field qty box-tocart">								           
-																							<div class="control">
-																								<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																									<div class="qty-input">
-																										<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																									   </div>
-																						<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																							</div>
-																						</div>
-																						<script type="text/javascript">
-																						require(['jquery','domReady!'],function($){
-																							$(".btn-qty").click(function (event) {
-																								var $button = $(this);
-																								var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																								var defaultValue = 0;
-																								if ($button.hasClass('plus')) {
-																									var newVal = parseFloat(oldValue) + 1;
-																								} else {
-																									if (oldValue > defaultValue) {
-																										var newVal = parseFloat(oldValue) - 1;
-																									} else {
-																										newVal = defaultValue;
-																									}
-																								}
-																								$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																								event.preventDefault();
-																							});
-																				
-																						});
-																						</script>
-																					   <button type="submit" title="Add to Cart" class="action tocart primary">
-																							<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																						</button>
-																					</form>
-																							<div data-role="add-to-links" class="actions-secondary">
-																								 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																									<span>Watching</span>
-																								</a>
-																							</div>										
-																						</div>
-																					</div>
-																				</div>
-																			</div> 
-																		</div>
-																	<div class="product details product-item-details">
-																		 <strong class="product name product-item-name">
-																			<a class="product-item-link" href="http://single.html/">
-																				Cap Rice - 50KG				                    </a>
-																		</strong>
-																			<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																				<span class="price-container price-final_price tax weee">
-																					<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																						<span class="price">₦21,500.00</span>    </span>
-																							</span>
-
-																			</div>				                				                
-																	</div>
-																</div>
-															</div>
-													</div>
-												</div>
-												<div class="owl-item active" style="width: 235.6px;" >
-												   <div class="item-slider"> 
-														<div class="item product product-item" id="slider">
-															<div class="product-item-info" data-container="product-grid">
-																<div class="product-info-top cdz-hover-section">
-																	<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																		<span class="main-image">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																		<span class="  ">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																	</a>
-															<div class="qs-button-icon">
-																<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																	<span><span>  </span></span></a>						
-																	<div class="cdz-product-bottom">
-																		<div class="cdz-buttons-container">
-																			<div class="cdz-buttons-inner">
-																			<form data-role="tocart-form" action="http://index.html/" method="post">
-																						<input type="hidden" name="product" value="">
-																						<input type="hidden" name="uenc" value="">
-																						<input name="form_key" type="hidden" value="">				                                    
-																						 <div class="field qty box-tocart">								           
-																							<div class="control">
-																								<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																									<div class="qty-input">
-																										<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																									   </div>
-																						<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																							</div>
-																						</div>
-																						<script type="text/javascript">
-																						require(['jquery','domReady!'],function($){
-																							$(".btn-qty").click(function (event) {
-																								var $button = $(this);
-																								var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																								var defaultValue = 0;
-																								if ($button.hasClass('plus')) {
-																									var newVal = parseFloat(oldValue) + 1;
-																								} else {
-																									if (oldValue > defaultValue) {
-																										var newVal = parseFloat(oldValue) - 1;
-																									} else {
-																										newVal = defaultValue;
-																									}
-																								}
-																								$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																								event.preventDefault();
-																							});
-																				
-																						});
-																						</script>
-																					   <button type="submit" title="Add to Cart" class="action tocart primary">
-																							<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																						</button>
-																					</form>
-																							<div data-role="add-to-links" class="actions-secondary">
-																								 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																									<span>Watching</span>
-																								</a>
-																							</div>										
-																						</div>
-																					</div>
-																				</div>
-																			</div> 
-																		</div>
-																	<div class="product details product-item-details">
-																		 <strong class="product name product-item-name">
-																			<a class="product-item-link" href="http://single.html/">
-																				Cap Rice - 50KG				                    </a>
-																		</strong>
-																			<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																				<span class="price-container price-final_price tax weee">
-																					<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																						<span class="price">₦21,500.00</span>    </span>
-																							</span>
-
-																			</div>				                				                
-																	</div>
-																</div>
-															</div>
-														<div class="item product product-item" id="slider">
-															<div class="product-item-info" data-container="product-grid">
-																<div class="product-info-top cdz-hover-section">
-																	<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																		<span class="main-image">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																		<span class="  ">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																	</a>
-															<div class="qs-button-icon">
-																<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																	<span><span>  </span></span></a>						
-																	<div class="cdz-product-bottom">
-																		<div class="cdz-buttons-container">
-																			<div class="cdz-buttons-inner">
-																			<form data-role="tocart-form" action="http://index.html/" method="post">
-																						<input type="hidden" name="product" value="">
-																						<input type="hidden" name="uenc" value="">
-																						<input name="form_key" type="hidden" value="">				                                    
-																						 <div class="field qty box-tocart">								           
-																							<div class="control">
-																								<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																									<div class="qty-input">
-																										<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																									   </div>
-																						<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																							</div>
-																						</div>
-																						<script type="text/javascript">
-																						require(['jquery','domReady!'],function($){
-																							$(".btn-qty").click(function (event) {
-																								var $button = $(this);
-																								var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																								var defaultValue = 0;
-																								if ($button.hasClass('plus')) {
-																									var newVal = parseFloat(oldValue) + 1;
-																								} else {
-																									if (oldValue > defaultValue) {
-																										var newVal = parseFloat(oldValue) - 1;
-																									} else {
-																										newVal = defaultValue;
-																									}
-																								}
-																								$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																								event.preventDefault();
-																							});
-																				
-																						});
-																						</script>
-																					   <button type="submit" title="Add to Cart" class="action tocart primary">
-																							<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																						</button>
-																					</form>
-																							<div data-role="add-to-links" class="actions-secondary">
-																								 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																									<span>Watching</span>
-																								</a>
-																							</div>										
-																						</div>
-																					</div>
-																				</div>
-																			</div> 
-																		</div>
-																	<div class="product details product-item-details">
-																		 <strong class="product name product-item-name">
-																			<a class="product-item-link" href="http://single.html/">
-																				Cap Rice - 50KG				                    </a>
-																		</strong>
-																			<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																				<span class="price-container price-final_price tax weee">
-																					<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																						<span class="price">₦21,500.00</span>    </span>
-																							</span>
-
-																			</div>				                				                
-																	</div>
-																</div>
-															</div>
-													</div>
-												</div>
-												<div class="owl-item active" style="width: 235.6px;" >
-												   <div class="item-slider"> 
-														<div class="item product product-item" id="slider">
-															<div class="product-item-info" data-container="product-grid">
-																<div class="product-info-top cdz-hover-section">
-																	<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																		<span class="main-image">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																		<span class="  ">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																	</a>
-															<div class="qs-button-icon">
-																<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																	<span><span>  </span></span></a>						
-																	<div class="cdz-product-bottom">
-																		<div class="cdz-buttons-container">
-																			<div class="cdz-buttons-inner">
-																			<form data-role="tocart-form" action="http://index.html/" method="post">
-																						<input type="hidden" name="product" value="">
-																						<input type="hidden" name="uenc" value="">
-																						<input name="form_key" type="hidden" value="">				                                    
-																						 <div class="field qty box-tocart">								           
-																							<div class="control">
-																								<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																									<div class="qty-input">
-																										<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																									   </div>
-																						<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																							</div>
-																						</div>
-																						<script type="text/javascript">
-																						require(['jquery','domReady!'],function($){
-																							$(".btn-qty").click(function (event) {
-																								var $button = $(this);
-																								var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																								var defaultValue = 0;
-																								if ($button.hasClass('plus')) {
-																									var newVal = parseFloat(oldValue) + 1;
-																								} else {
-																									if (oldValue > defaultValue) {
-																										var newVal = parseFloat(oldValue) - 1;
-																									} else {
-																										newVal = defaultValue;
-																									}
-																								}
-																								$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																								event.preventDefault();
-																							});
-																				
-																						});
-																						</script>
-																					   <button type="submit" title="Add to Cart" class="action tocart primary">
-																							<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																						</button>
-																					</form>
-																							<div data-role="add-to-links" class="actions-secondary">
-																								 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																									<span>Watching</span>
-																								</a>
-																							</div>										
-																						</div>
-																					</div>
-																				</div>
-																			</div> 
-																		</div>
-																	<div class="product details product-item-details">
-																		 <strong class="product name product-item-name">
-																			<a class="product-item-link" href="http://single.html/">
-																				Cap Rice - 50KG				                    </a>
-																		</strong>
-																			<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																				<span class="price-container price-final_price tax weee">
-																					<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																						<span class="price">₦21,500.00</span>    </span>
-																							</span>
-
-																			</div>				                				                
-																	</div>
-																</div>
-															</div>
-														<div class="item product product-item" id="slider">
-															<div class="product-item-info" data-container="product-grid">
-																<div class="product-info-top cdz-hover-section">
-																	<a href="single.html" class="product photo product-item-photo" tabindex="-1">
-																		<span class="main-image">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																		<span class="  ">
-																			<span class="product-image-container" style="width:120px;">
-																				<span class="product-image-wrapper" style="padding-bottom: 100%;">
-																					<img    src="images/caprice-50kg.jpg" width="120" height="120" alt="Cap Rice - 50KG" class="img-responsive"></span>
-																			</span>
-																		</span>
-																	</a>
-															<div class="qs-button-icon">
-																<a class="qs-button " href="javascript:void(0)" data-href="" title=" ">
-																	<span><span>  </span></span></a>						
-																	<div class="cdz-product-bottom">
-																		<div class="cdz-buttons-container">
-																			<div class="cdz-buttons-inner">
-																			<form data-role="tocart-form" action="http://index.html/" method="post">
-																						<input type="hidden" name="product" value="">
-																						<input type="hidden" name="uenc" value="">
-																						<input name="form_key" type="hidden" value="">				                                    
-																						 <div class="field qty box-tocart">								           
-																							<div class="control">
-																								<div class="qty-minus"> <a class="btn-qty minus" href="http://index.html">-</a></div>
-																									<div class="qty-input">
-																										<input type="number" name="qty" id="block_59a85d57363bd_2594_qty" maxlength="12" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true}">
-																									   </div>
-																						<div class="qty-plus"> <a class="btn-qty plus" href="http://index.html">+</a></div>
-																							</div>
-																						</div>
-																						<script type="text/javascript">
-																						require(['jquery','domReady!'],function($){
-																							$(".btn-qty").click(function (event) {
-																								var $button = $(this);
-																								var oldValue = $button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val();
-																								var defaultValue = 0;
-																								if ($button.hasClass('plus')) {
-																									var newVal = parseFloat(oldValue) + 1;
-																								} else {
-																									if (oldValue > defaultValue) {
-																										var newVal = parseFloat(oldValue) - 1;
-																									} else {
-																										newVal = defaultValue;
-																									}
-																								}
-																								$button.closest('.control').find("input#block_59a85d57363bd_2594_qty").val(newVal);
-																								event.preventDefault();
-																							});
-																				
-																						});
-																						</script>
-																					   <button type="submit" title="Add to Cart" class="action tocart primary">
-																							<span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-																						</button>
-																					</form>
-																							<div data-role="add-to-links" class="actions-secondary">
-																								 <a href="http://index.html/#" class="action towishlist" title="Add to Wish List" aria-label="Add to Wish List" data-post="" data-action="add-to-wishlist" role="button">
-																									<span>Watching</span>
-																								</a>
-																							</div>										
-																						</div>
-																					</div>
-																				</div>
-																			</div> 
-																		</div>
-																	<div class="product details product-item-details">
-																		 <strong class="product name product-item-name">
-																			<a class="product-item-link" href="http://single.html/">
-																				Cap Rice - 50KG				                    </a>
-																		</strong>
-																			<div class="price-box price-final_price" data-role="priceBox" data-product-id="2594">
-																				<span class="price-container price-final_price tax weee">
-																					<span id="old-price-2594-final_price" data-price-amount="21500" data-price-type="finalPrice" class="price-wrapper ">
-																						<span class="price">₦21,500.00</span>    </span>
-																							</span>
-
-																			</div>				                				                
-																	</div>
-																</div>
-															</div>
-													</div>
-												</div>
-											<div class="owl-dots disabled">
 											</div>
 										</div>
 									</div>
@@ -2551,11 +1774,14 @@
 							</div>
 						</div>
 					</div>
+					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-<br><br>
+
+					
+				
+				
+				
+	<br><br>
 	<div class="pane">		
 		<div class="row">
 			<div class="col-sm-24">
@@ -2575,21 +1801,21 @@
 					 </div>
 					<div class="row category-content">
 						 <div>
-							<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-400px;margin-left:20px;width:250px;height:200px"></a>
+							<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-400px;margin-left:20px;width:270px;height:200px"></a>
 						 </div>
 						 <div>
-							<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-600px;margin-left:270px;width:250px;height:200px"></a>
+							<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-600px;margin-left:290px;width:270px;height:200px"></a>
 						 </div>
 						 <div>
-							<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-800px;margin-left:570px;width:250px;height:200px"></a>
+							<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-800px;margin-left:600px;width:250px;height:200px"></a>
 						 </div>
 					</div>
 					 <div class="row category-content">
 						 <div>
-							<a href="product.html"><img src="images/banner2.jpg" style="position:relative;top:-800px;margin-left:20px;width:250px;height:200px"></a>
+							<a href="product.html"><img src="images/banner2.jpg" style="position:relative;top:-800px;margin-left:20px;width:270px;height:200px"></a>
 						 </div>
 						 <div>
-							<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-1000px;margin-left:270px;width:550px;height:200px"></a>
+							<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-1000px;margin-left:290px;width:550px;height:200px"></a>
 						 </div>
 					 </div>
 				</div>
@@ -2602,7 +1828,7 @@
 		<div class="row">
 			<div class="col-sm-24">
 				<div class="block-title">
-					<p class="b-title h3"><a class="collection" href="product.html">View Top second Offers <i class="glyphicon glyphicon-arrow-right"></i></a></p></h3>
+					<p class="b-title h3"><a class="collection" href="product.html">View Top Offers <i class="glyphicon glyphicon-arrow-right"></i></a></p></h3>
 				</div>
 			</div>
 		</div>
@@ -2625,21 +1851,63 @@
 									<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-400px;margin-left:10px;width:250px;height:200px"></a>
 								 </div>
 								 <div>
-									<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-600px;margin-left:260px;width:250px;height:200px"></a>
+									<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-600px;margin-left:260px;width:300px;height:200px"></a>
 								 </div>
 								 <div>
-									<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-800px;margin-left:560px;width:250px;height:200px"></a>
+									<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-800px;margin-left:560px;width:300px;height:200px"></a>
 								 </div>
 							</div>
 							 <div class="row category-content">
 								 <div>
-									<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-800px;margin-left:10px;width:500px;height:200px"></a>
+									<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-800px;margin-left:10px;width:550px;height:200px"></a>
 								 </div>
 								 <div>
-									<a href="product.html"><img src="images/banner2.jpg" style="position:relative;top:-1000px;margin-left:510px;width:250px;height:200px"></a>
+									<a href="product.html"><img src="images/banner2.jpg" style="position:relative;top:-1000px;margin-left:560px;width:300px;height:200px"></a>
 								 </div>
 							 </div>
 		</div>
+	</div>
+<br>
+	<div class="pane">		
+		<div class="row">
+			<div class="col-sm-24">
+				<div class="block-title">
+					<p class="b-title h3"><a class="collection" href="product.html">View Top Offers <i class="glyphicon glyphicon-arrow-right"></i></a></p></h3>
+				</div>
+			</div>
+		</div>
+		<div class="category-wrapper">
+	<div class="row">
+		<div class="wrap">
+			 <div class="owl-stage" style="width: 2356px; transform: translate3d(0px, 0px, 0px); transition: 0s;">
+				 <div class="banner">
+						<div class="side-banner">
+							<a href="product.html"><img src="images/house.jpg" style="width:323px;height:400px"/></a>
+						</div>
+					 </div>
+					<div class="row category-content">
+						 <div>
+							<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-400px;margin-left:20px;width:270px;height:200px"></a>
+						 </div>
+						 <div>
+							<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-600px;margin-left:290px;width:270px;height:200px"></a>
+						 </div>
+						 <div>
+							<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-800px;margin-left:600px;width:250px;height:200px"></a>
+						 </div>
+					</div>
+					 <div class="row category-content">
+						 <div>
+							<a href="product.html"><img src="images/banner2.jpg" style="position:relative;top:-800px;margin-left:20px;width:270px;height:200px"></a>
+						 </div>
+						 <div>
+							<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-1000px;margin-left:290px;width:550px;height:200px"></a>
+						 </div>
+					 </div>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 <br>
 	<div class="pane">		
@@ -2669,62 +1937,18 @@
 									<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-400px;margin-left:10px;width:250px;height:200px"></a>
 								 </div>
 								 <div>
-									<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-600px;margin-left:260px;width:250px;height:200px"></a>
+									<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-600px;margin-left:260px;width:300px;height:200px"></a>
 								 </div>
 								 <div>
-									<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-800px;margin-left:560px;width:250px;height:200px"></a>
-								 </div>
-							</div>
-							 <div class="row category-content">
-								 <div>
-									<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-800px;margin-left:10px;width:500px;height:200px"></a>
-								 </div>
-								 <div>
-									<a href="product.html"><img src="images/banner2.jpg" style="position:relative;top:-1000px;margin-left:510px;width:250px;height:200px"></a>
-								 </div>
-							 </div>
-		</div>
-	</div>								
-<br>
-	<div class="pane">		
-		<div class="row">
-			<div class="col-sm-24">
-				<div class="block-title">
-					<p class="b-title h3"><a class="collection" href="product.html">View Top Offers <i class="glyphicon glyphicon-arrow-right"></i></a></p></h3>
-				</div>
-			</div>
-		</div>
-		<div class="category-wrapper">
-			<div class="row">
-				<div class="wrap">
-					 <div class="owl-stage">
-						 <div class="owl-item active banner" style="width: 300.6px;" >
-							<div class="item-slider">
-								<div class="side-banner">
-									<a href="product.html"><img src="images/house.jpg" style="width:323px;height:400px"/></a>
-								</div>
-							 </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row category-content">
-								 <div>
-									<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-400px;margin-left:10px;width:250px;height:200px"></a>
-								 </div>
-								 <div>
-									<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-600px;margin-left:260px;width:250px;height:200px"></a>
-								 </div>
-								 <div>
-									<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-800px;margin-left:560px;width:250px;height:200px"></a>
+									<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-800px;margin-left:560px;width:300px;height:200px"></a>
 								 </div>
 							</div>
 							 <div class="row category-content">
 								 <div>
-									<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-800px;margin-left:10px;width:500px;height:200px"></a>
+									<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-800px;margin-left:10px;width:600px;height:200px"></a>
 								 </div>
 								 <div>
-									<a href="product.html"><img src="images/banner2.jpg" style="position:relative;top:-1000px;margin-left:510px;width:250px;height:200px"></a>
+									<a href="product.html"><img src="images/banner2.jpg" style="position:relative;top:-1000px;margin-left:610px;width:300px;height:200px"></a>
 								 </div>
 							 </div>
 		</div>
@@ -2752,7 +1976,7 @@
 									<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-400px;margin-left:20px;width:550px;height:200px"></a>
 								 </div>
 								 <div>
-									<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-600px;margin-left:570px;width:250px;height:200px"></a>
+									<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-600px;margin-left:570px;width:300px;height:200px"></a>
 								 </div>
 							</div>
 							 <div class="row category-content">
@@ -2760,7 +1984,7 @@
 									<a href="product.html"><img src="images/banner2.jpg" style="position:relative;top:-600px;margin-left:20px;width:250px;height:200px"></a>
 								 </div>
 								 <div>
-									<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-800px;margin-left:270px;width:550px;height:200px"></a>
+									<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-800px;margin-left:270px;width:600px;height:200px"></a>
 								 </div>
 							 </div>
 						</div>
@@ -2791,7 +2015,7 @@
 								<a href="product.html"><img src="images/banner1.jpg" style="position:relative;top:-400px;margin-left:20px;width:550px;height:200px"></a>
 							 </div>
 							 <div>
-								<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-600px;margin-left:570px;width:250px;height:200px"></a>
+								<a href="product.html"><img src="images/banner3.jpg" style="position:relative;top:-600px;margin-left:570px;width:300px;height:200px"></a>
 							 </div>
 						</div>
 						 <div class="row category-content">
@@ -2799,7 +2023,7 @@
 								<a href="product.html"><img src="images/banner2.jpg" style="position:relative;top:-600px;margin-left:20px;width:250px;height:200px"></a>
 							 </div>
 							 <div>
-								<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-800px;margin-left:270px;width:550px;height:200px"></a>
+								<a href="product.html"><img src="images/banner4.jpg" style="position:relative;top:-800px;margin-left:270px;width:600px;height:200px"></a>
 							 </div>
 						 </div>
 					</div>
@@ -2884,7 +2108,7 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 	 <!--/start-copyright-->
 	 <div class="copy">
 		<div class="container">
@@ -2976,14 +2200,39 @@ window.onclick = function(event) {
 }
 </script>
 <script>
+document.getElementById("search").style.visibility = "hidden";
 function openSearch() {
-    document.getElementById("search-bar").style.top = "43px";
+    document.getElementById("search").style.visibility = "visible";
 	
 }
 
 function closeSearch() {
-    document.getElementById("search-bar").style.top = "-100px";
+    document.getElementById("search").style.visibility = "hidden";
 }
+</script>
+<script>
+
+var x=0;
+
+function moveRight()
+{
+        var layerElement = document.getElementById("layer2");
+
+        x+=100;
+
+        layerElement.style.left=x;
+}
+
+function moveLeft()
+{
+        var layerElement = document.getElementById("layer2");
+
+        x-=100;
+
+        layerElement.style.left=x;
+}
+
+
 </script>
 </body>
 </html>
